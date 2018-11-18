@@ -20,20 +20,20 @@ class History extends Module {
         }
       },
     );
-    this.quill.keyboard.addBinding(
-      { key: 'z', shortKey: true },
-      this.undo.bind(this),
-    );
-    this.quill.keyboard.addBinding(
-      { key: 'z', shortKey: true, shiftKey: true },
-      this.redo.bind(this),
-    );
-    if (/Win/i.test(navigator.platform)) {
-      this.quill.keyboard.addBinding(
-        { key: 'y', shortKey: true },
-        this.redo.bind(this),
-      );
-    }
+    // this.quill.keyboard.addBinding(
+    //   { key: 'z', shortKey: true },
+    //   this.undo.bind(this),
+    // );
+    // this.quill.keyboard.addBinding(
+    //   { key: 'z', shortKey: true, shiftKey: true },
+    //   this.redo.bind(this),
+    // );
+    // if (/Win/i.test(navigator.platform)) {
+    //   this.quill.keyboard.addBinding(
+    //     { key: 'y', shortKey: true },
+    //     this.redo.bind(this),
+    //   );
+    // }
   }
 
   change(source, dest) {
